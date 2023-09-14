@@ -1,0 +1,48 @@
+:root {
+    --color1: #5F2C82;
+    --color2: #53AAA7;
+    --color3: #94CFCD;
+    --color4: #ffffff;
+    --color5: #3a7472;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-image: linear-gradient(var(--color1), var(--color2));
+    }
+
+    main {
+        display: flex;
+        width: 80vw;
+        height: 300px;
+    }
+
+    #metal-background {
+        height: 300px;
+        width: 70%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        background-position: left center;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    body {
+        background-image: linear-gradient(var(--color1), var(--color2));
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 950px;
+        height: 350px;
+    }
+
+    #metal-background {
+        height: 350px;
+        width: 70%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 20px;
+    }
+}
